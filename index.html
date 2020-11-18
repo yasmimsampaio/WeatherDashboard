@@ -3,24 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="index.css">
     <title>Weather Dashboard</title>
 </head>
 <body>
     
     <div class="jumbotron jumbotron-fluid">
-        <div class="container">
+        <!-- <div class="container"> -->
           <h1 class="display-4">Weather Dashboard</h1>
         </div>
-      </div>    
+    <!-- </div> -->
 <!-- Search Button -->
-      <nav class="navbar navbar-light bg-light">
-        <form class="form-inline">
-          <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button id="searchBtn" class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
-        </form>
-      </nav>
-
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <form class="form-inline">
+                <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
+                <button id="searchBtn" class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
+            </form>
+        </div>
+        <div class="col-8">
+            <div id="cityTitle"></div>
+        </div>
+    </div>
+</div>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="index.js"></script>
 </body>
